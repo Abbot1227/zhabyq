@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#2a69f2</color>
+    <color name="colorPrimaryDark">#113d9c</color>
+    <color name="statusBar">#5C5858</color>
+    <color name="black20">#33000000</color>
+    <color name="back_main">#fffafafa</color>
+    <color name="attention">#ce5858</color>
+    <color name="qr_pass_text">#CEC4C3C3</color>
+    <color name="pass_lines">#AB7A9EEF</color>
+    <color name="shadow_end_color">@android:color/transparent</color>
+    <color name="shadow_mid_color">#14000000</color>
+    <color name="shadow_start_color">#44000000</color>
+    <color name="edit_text_hint">#a7b8d9</color>
+    <color name="status_blue">#476ACF</color>
+    <color name="status_green">#9DEB95</color>
+    <color name="status_red">#C3202E</color>
+    <color name="status_yellow">#E3C742</color>
+    <color name="status_green_text">#145F20</color>
+</resources>

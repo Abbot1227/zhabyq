@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Zhabyq</string>
+    <string name="welcome_en">Welcome!</string>
+    <string name="welcome_kk">Қош келдіңіз!</string>
+    <string name="welcome_ru">Добро пожаловать!</string>
+    <string name="kk">Қазақша</string>
+    <string name="ru">Русский</string>
+    <string name="en">English</string>
+    <string name="log_in_account">Войти в аккаунт</string>
+    <string name="enter_phone_number">Введите ИИН и номер телефона</string>
+    <string name="enter_phone_number_hint">+71234567890</string>
+    <string name="log_in">Войти</string>
+    <string name="privacy_policy">Я согласен с условиями работы сервиса</string>
+    <string name="wrong_phone">Неправильный номер телефона</string>
+    <string name="pass_service_note">Покажите полученный результат соответствующему сотруднику объекта</string>
+    <string name="entry_name">Куда входите:</string>
+    <string name="bin_iin">БИН/ИИН</string>
+    <string name="entry_num">Номер входа</string>
+    <string name="expiry_time">Срок действия истечет через:</string>
+    <string name="scan_time">Дата и время сканирования кода</string>
+    <string name="status">Статус</string>
+    <string name="status_green">Безопасный</string>
+    <string name="status_blue">Нейтральный</string>
+    <string name="status_yellow">Контактный</string>
+    <string name="status_red">Nigger</string>
+    <string name="where_in_entering_">Куда входите:</string>
+    <string name="entry_number">Номер входа</string>
+</resources>

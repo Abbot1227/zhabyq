@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/qrcheckbackground"
+    tools:context=".CheckQrActivity">
+
+    <TextView
+        android:layout_width="356dp"
+        android:layout_height="44dp"
+        android:text="@string/pass_service_note"
+        android:textAlignment="center"
+        android:textColor="@color/attention"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946" />
+
+    <TextView
+        android:layout_width="129dp"
+        android:layout_height="25dp"
+        android:text="Номер телефона"
+        android:textColor="@color/qr_pass_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="108dp"
+        android:layout_height="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:layout_width="129dp"
+        android:layout_height="25dp"
+        android:text="ИИН"
+        android:textColor="@color/qr_pass_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.742"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <TextView
+        android:id="@+id/iin"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <ImageView
+        android:layout_width="144dp"
+        android:layout_height="35dp"
+        android:src="@drawable/smalllogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageButton
+        android:id="@+id/close_pass"
+        android:layout_width="15dp"
+        android:layout_height="20dp"
+        android:background="#00000000"
+        android:onClick="closePass"
+        android:src="@drawable/backbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="18dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="465dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="17dp"
+                android:text="@string/where_in_entering_"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/large_text_size" />
+
+            <TextView
+                android:id="@+id/entry_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:tag="binding_4"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:columnCount="3"
+                app:rowCount="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:gravity="top|center_vertical|center_horizontal|center"
+                    android:text="@string/bin_iin"
+                    android:textColor="@color/edit_text_hint"
+                    android:textSize="@dimen/large_text_size"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/biin1"
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:gravity="top|center_vertical|center_horizontal|center"
+                    android:tag="binding_5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_row="1" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="0dp"
+                    android:background="@color/edit_text_hint"
+                    app:layout_column="1"
+                    app:layout_row="0"
+                    app:layout_rowSpan="2"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:gravity="top|center_vertical|center_horizontal|center"
+                    android:text="@string/entry_number"
+                    android:textColor="@color/edit_text_hint"
+                    android:textSize="@dimen/large_text_size"
+                    app:layout_column="2"
+                    app:layout_columnWeight="1"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <TextView
+                    android:id="@+id/entrynum1"
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:gravity="top|center_vertical|center_horizontal|center"
+                    android:tag="binding_6"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/large_text_size"
+                    app:layout_column="2"
+                    app:layout_columnWeight="1"
+                    app:layout_row="1" />
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/edit_text_hint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@string/status"
+                android:textColor="@color/edit_text_hint"
+                android:textSize="@dimen/large_text_size" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:backgroundTint="@color/status_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:minHeight="76dp"
+                android:tag="binding_7"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp" >
+
+                <ImageView
+                    android:id="@+id/image_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right|center_vertical|center_horizontal|center|end"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/ic_info"
+                    android:tag="binding_8" />
+
+                <TextView
+                    android:id="@+id/status_display"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center"
+                    android:text="Безопасный"
+                    android:textColor="@color/status_green_text"
+                    android:tag="binding_9"
+                    android:textSize="@dimen/ultra_large_text_size"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/expiry_time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/large_text_size" />
+
+            <TextView
+                android:id="@+id/expiry_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:gravity="center"
+                android:tag="binding_10"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/text_code_scanning_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/scan_time"
+                android:textColor="@color/edit_text_hint"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/scan_time"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:tag="binding_11"
+                android:textColor="@color/edit_text_hint"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
